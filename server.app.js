@@ -3,7 +3,7 @@ require('babel/register')({
   stage: 0
 });
 
-var initter = require('./app/initters/server');
+var initter = require('./app/bundles/app/initters/server');
 
 var config = require('./config/server.app');
 
