@@ -14,7 +14,6 @@ class Footer extends React.Component {
         <div className='container'>
           <div className='row'>
             <div className='col-xs-12'>
-              <h3 className='lead'>Footer</h3>
             </div>
           </div>
         </div>

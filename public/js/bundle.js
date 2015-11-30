@@ -101,15 +101,7 @@ var Footer = (function (_React$Component) {
           _react2.default.createElement(
             'div',
             { className: 'row' },
-            _react2.default.createElement(
-              'div',
-              { className: 'col-xs-12' },
-              _react2.default.createElement(
-                'h3',
-                { className: 'lead' },
-                'Footer'
-              )
-            )
+            _react2.default.createElement('div', { className: 'col-xs-12' })
           )
         )
       );
@@ -154,11 +146,7 @@ var Home = (function (_React$Component) {
   _createClass(Home, [{
     key: 'render',
     value: function render() {
-      return _react2.default.createElement(
-        'div',
-        { className: 'alert alert-info' },
-        'Hello from Home Component'
-      );
+      return _react2.default.createElement('div', { className: 'alert alert-info' });
     }
   }]);
 
@@ -202,7 +190,7 @@ var Navbar = (function (_React$Component) {
     value: function render() {
       return _react2.default.createElement(
         'nav',
-        { className: 'navbar navbar-default navbar-static-top' },
+        { className: 'navbar' },
         'Navbar'
       );
     }

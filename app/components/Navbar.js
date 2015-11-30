@@ -7,7 +7,7 @@ class Navbar extends React.Component {
 
   render() {
     return (
-      <nav className='navbar navbar-default navbar-static-top'>
+      <nav className='navbar'>
 				Navbar
       </nav>
     );
