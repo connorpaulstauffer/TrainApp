@@ -1,3 +1,5 @@
+@import 'constants';
+
 .navbar {
 	position: fixed;
 	width: 100%;
@@ -35,17 +37,22 @@
 			&.navbar-controls {
 				float: right;
 
-				.navbar-controls-item {
+				.navbar-controls-item-wrapper {
 					display: inline-block;
-					line-height: 20px;
-					padding: 20px;
-					color: $grey;
+					
+					.navbar-controls-item {
+						display: inline-block;
+						line-height: 20px;
+						padding: 20px;
+						color: $grey;
 
-					&:hover {
-						height: 60px;
-						background-color: rgba(174, 190, 197, .2);
-						color: $light-blue;
-						border-bottom: solid $light-blue 3px;
+						&:hover {
+							height: 60px;
+							background-color: rgba(174, 190, 197, .2);
+							color: $light-blue;
+							border-bottom: solid $light-blue 3px;
+						}
+
 					}
 
 				}

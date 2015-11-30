@@ -1,4 +1,6 @@
 import React from 'react';
+import NavbarSignIn from './navbar/NavbarSignIn';
+import NavbarSignUp from './navbar/NavbarSignUp';
 
 class Navbar extends React.Component {
   constructor(props) {
@@ -14,8 +16,8 @@ class Navbar extends React.Component {
 					</a>
 
 					<div className="navbar-section navbar-controls">
-						<a href="#" className="navbar-controls-item">Sign In</a>
-						<a href="#" className="navbar-controls-item">Sign Up</a>
+						<NavbarSignIn />
+						<NavbarSignUp />
 					</div>
 				</div>
       </nav>
