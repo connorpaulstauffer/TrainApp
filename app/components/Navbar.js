@@ -9,17 +9,13 @@ class Navbar extends React.Component {
     return (
       <nav className="navbar">
 				<div className="navbar-container">
-					<div className="navbar-section navbar-header">
+					<a href="/" className="navbar-section navbar-header">
 						<h1>Train</h1>
-					</div>
+					</a>
 
 					<div className="navbar-section navbar-controls">
-						<div className="navbar-controls-item">
-							<a href="#">Sign In</a>
-						</div>
-						<div className="navbar-controls-item">
-							<a href="#">Sign Up</a>
-						</div>
+						<a href="#" className="navbar-controls-item">Sign In</a>
+						<a href="#" className="navbar-controls-item">Sign Up</a>
 					</div>
 				</div>
       </nav>

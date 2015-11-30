@@ -2,6 +2,7 @@
 	position: fixed;
 	width: 100%;
 	height: 60px;
+	background-color: #1B2C45;
 
 	&:after {
 		display: table;
@@ -19,9 +20,13 @@
 
 			&.navbar-header {
 				line-height: 30px;
-				padding: 15px 30px;
+				padding: 15px 20px;
+				color: #F7FDFF;
 
 				h1 {
+					font-weight: 400;
+					text-transform: uppercase;
+					letter-spacing: 2px;
 					margin: 0;
 				}
 
@@ -33,7 +38,16 @@
 				.navbar-controls-item {
 					display: inline-block;
 					line-height: 20px;
-					padding: 20px 30px;
+					padding: 20px;
+					color: #AEBEC5;
+
+					&:hover {
+						height: 60px;
+						background-color: rgba(174, 190, 197, .2);
+						color: #F7FDFF;
+						border-bottom: solid #F7FDFF 3px;
+					}
+
 				}
 
 			}

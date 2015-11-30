@@ -161,7 +161,7 @@ exports.default = Home;
 var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
 Object.defineProperty(exports, "__esModule", {
-	value: true
+  value: true
 });
 
 var _react = require("react");
@@ -177,60 +177,52 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var Navbar = (function (_React$Component) {
-	_inherits(Navbar, _React$Component);
+  _inherits(Navbar, _React$Component);
 
-	function Navbar(props) {
-		_classCallCheck(this, Navbar);
+  function Navbar(props) {
+    _classCallCheck(this, Navbar);
 
-		return _possibleConstructorReturn(this, Object.getPrototypeOf(Navbar).call(this, props));
-	}
+    return _possibleConstructorReturn(this, Object.getPrototypeOf(Navbar).call(this, props));
+  }
 
-	_createClass(Navbar, [{
-		key: "render",
-		value: function render() {
-			return _react2.default.createElement(
-				"nav",
-				{ className: "navbar" },
-				_react2.default.createElement(
-					"div",
-					{ className: "navbar-container" },
-					_react2.default.createElement(
-						"div",
-						{ className: "navbar-section navbar-header" },
-						_react2.default.createElement(
-							"h1",
-							null,
-							"Train"
-						)
-					),
-					_react2.default.createElement(
-						"div",
-						{ className: "navbar-section navbar-controls" },
-						_react2.default.createElement(
-							"div",
-							{ className: "navbar-controls-item" },
-							_react2.default.createElement(
-								"a",
-								{ href: "#" },
-								"Sign In"
-							)
-						),
-						_react2.default.createElement(
-							"div",
-							{ className: "navbar-controls-item" },
-							_react2.default.createElement(
-								"a",
-								{ href: "#" },
-								"Sign Up"
-							)
-						)
-					)
-				)
-			);
-		}
-	}]);
+  _createClass(Navbar, [{
+    key: "render",
+    value: function render() {
+      return _react2.default.createElement(
+        "nav",
+        { className: "navbar" },
+        _react2.default.createElement(
+          "div",
+          { className: "navbar-container" },
+          _react2.default.createElement(
+            "a",
+            { href: "/", className: "navbar-section navbar-header" },
+            _react2.default.createElement(
+              "h1",
+              null,
+              "Train"
+            )
+          ),
+          _react2.default.createElement(
+            "div",
+            { className: "navbar-section navbar-controls" },
+            _react2.default.createElement(
+              "a",
+              { href: "#", className: "navbar-controls-item" },
+              "Sign In"
+            ),
+            _react2.default.createElement(
+              "a",
+              { href: "#", className: "navbar-controls-item" },
+              "Sign Up"
+            )
+          )
+        )
+      );
+    }
+  }]);
 
-	return Navbar;
+  return Navbar;
 })(_react2.default.Component);
 
 exports.default = Navbar;
