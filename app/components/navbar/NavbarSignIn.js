@@ -3,7 +3,6 @@ import Modal from './../shared/Modal';
 import SignInForm from './../shared/SignInForm';
 
 class NavbarSignIn extends React.Component {
-
   constructor(props) {
     super(props);
 		this.state = { modalIsOpen: false };
