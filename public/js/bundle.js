@@ -287,11 +287,13 @@ var NavbarSignIn = (function (_React$Component) {
 				_react2.default.createElement(
 					'a',
 					{ href: 'javascript:void(0)',
-						onClick: this.openModal,
+						onClick: this.openModal.bind(this),
 						className: 'navbar-controls-item' },
 					'Sign In'
 				),
-				_react2.default.createElement(_Modal2.default, { isOpen: this.state.modalIsOpen, component: _SignInForm2.default })
+				_react2.default.createElement(_Modal2.default, { isOpen: this.state.modalIsOpen,
+					closeModal: this.closeModal.bind(this),
+					component: _SignInForm2.default })
 			);
 		}
 	}]);
@@ -361,11 +363,13 @@ var NavbarSignUp = (function (_React$Component) {
 				_react2.default.createElement(
 					'a',
 					{ href: 'javascript:void(0)',
-						onClick: this.openModal,
+						onClick: this.openModal.bind(this),
 						className: 'navbar-controls-item' },
 					'Sign Up'
 				),
-				_react2.default.createElement(_Modal2.default, { isOpen: this.state.modalIsOpen, component: _SignUpForm2.default })
+				_react2.default.createElement(_Modal2.default, { isOpen: this.state.modalIsOpen,
+					closeModal: this.closeModal.bind(this),
+					component: _SignUpForm2.default })
 			);
 		}
 	}]);
@@ -411,7 +415,7 @@ var Modal = (function (_React$Component) {
 			if (this.props.isOpen) {
 				return _react2.default.createElement(
 					"div",
-					{ className: "overlay" },
+					{ className: "overlay", onClick: this.props.closeModal },
 					_react2.default.createElement(
 						"div",
 						{ className: "content" },

@@ -9,7 +9,6 @@ class NavbarSignIn extends React.Component {
 		this.state = { modalIsOpen: false };
   }
 
-
 	openModal() {
 		this.setState({modalIsOpen: true});
 	}
@@ -22,10 +21,12 @@ class NavbarSignIn extends React.Component {
     return (
 			<div className="navbar-controls-item-wrapper">
 				<a href="javascript:void(0)"
-					 onClick={ this.openModal }
+					 onClick={ this.openModal.bind(this) }
 					 className="navbar-controls-item">Sign In</a>
 
-				<Modal isOpen={ this.state.modalIsOpen } component={ SignInForm } />
+				<Modal isOpen={ this.state.modalIsOpen }
+							 closeModal= { this.closeModal.bind(this) }
+							 component={ SignInForm } />
 			</div>
     );
   }

@@ -8,7 +8,7 @@ class Modal extends React.Component {
   render() {
 		if (this.props.isOpen) {
 	    return (
-				<div className="overlay">
+				<div className="overlay" onClick={ this.props.closeModal }>
 					<div className="content">
 						{ this.props.children }
 					</div>

@@ -20,10 +20,12 @@ class NavbarSignUp extends React.Component {
     return (
 			<div className="navbar-controls-item-wrapper">
 				<a href="javascript:void(0)"
-					 onClick={ this.openModal }
+					 onClick={ this.openModal.bind(this) }
 					 className="navbar-controls-item">Sign Up</a>
-					 
-				<Modal isOpen={ this.state.modalIsOpen } component={ SignUpForm } />
+
+				<Modal isOpen={ this.state.modalIsOpen }
+							 closeModal= { this.closeModal.bind(this) }
+							 component={ SignUpForm } />
 			</div>
     );
   }
